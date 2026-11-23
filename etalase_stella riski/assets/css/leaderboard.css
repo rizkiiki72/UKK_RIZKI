@@ -1,0 +1,93 @@
+.stat-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.stat-num   { font-size: 1.75rem; font-weight: 700; line-height: 1.1; }
+.stat-label { font-size: .8rem; color: #6c757d; }
+
+.my-rank {
+    background: #e7f1ff;
+    color: #0a58ca;
+    border-radius: 12px;
+    padding: 10px 16px;
+}
+
+/* Podium top 3 */
+.podium {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+}
+.podium-item {
+    flex: 1 1 0;
+    min-width: 0;
+    background: #fff;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+    padding: 12px 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.podium-1 { padding-top: 26px; padding-bottom: 26px; border-top: 4px solid #ffc107; }
+.podium-2 { padding-top: 18px; padding-bottom: 18px; border-top: 4px solid #adb5bd; }
+.podium-3 { border-top: 4px solid #cd7f32; }
+.podium-medal { font-size: 1.8rem; line-height: 1; }
+.podium-name  {
+    font-weight: 600;
+    font-size: .9rem;
+    margin-top: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.podium-score { font-weight: 700; color: #0d6efd; }
+.podium-score small { font-weight: 400; color: #6c757d; font-size: .7rem; }
+
+/* Daftar peringkat */
+.card-lb {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.lb-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+}
+.lb-me { background: #f0f6ff; }
+.lb-rank {
+    flex: 0 0 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #e9ecef;
+    color: #495057;
+    font-weight: 700;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lb-rank-1 { background: #ffc107; color: #000; }
+.lb-rank-2 { background: #ced4da; color: #000; }
+.lb-rank-3 { background: #cd7f32; color: #fff; }
+.lb-name {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.lb-count { font-size: 1.15rem; font-weight: 700; color: #0d6efd; }
+.lb-zero  { color: #adb5bd; }
+
+@media (max-width: 575.98px) {
+    .podium-name  { font-size: .78rem; }
+    .podium-medal { font-size: 1.5rem; }
+    .lb-row       { padding: 10px 12px; gap: 10px; }
+}
